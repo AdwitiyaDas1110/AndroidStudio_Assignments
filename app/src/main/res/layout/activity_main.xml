@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="curcon.promact.com.currencyconvertorapp.MainActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="368dp"
+            android:layout_height="495dp">
+
+            <TextView
+                android:id="@+id/IndianLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/stringIndianRupee"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/IndianValue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:layout_toEndOf="@+id/IndianLabel"
+                android:background="@drawable/edit_text" />
+
+
+
+            <TextView
+                android:id="@+id/USLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/IndianLabel"
+                android:layout_below="@+id/IndianValue"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/stringUSDollar"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/USValue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/IndianValue"
+                android:layout_below="@+id/IndianValue"
+                android:background="@drawable/edit_text" />
+
+            <ImageButton
+                android:id="@+id/IndianToRestButton"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:layout_toEndOf="@+id/IndianValue"
+                android:src="@drawable/change_currency" />
+
+            <TextView
+                android:id="@+id/SwissLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/BahrainLabel"
+                android:layout_below="@+id/USLabel"
+                android:layout_marginTop="11dp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/stringSwissFranc"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/SwissValue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/SwissLabel"
+                android:layout_alignBottom="@+id/SwissLabel"
+                android:layout_alignStart="@+id/USValue"
+                android:background="@drawable/edit_text" />
+
+
+
+
+            <TextView
+                android:id="@+id/BahrainLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/USLabel"
+                android:layout_below="@+id/SwissLabel"
+                android:layout_marginTop="13dp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/stringBahrainiDinar"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/BahrainValue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/BahrainLabel"
+                android:layout_alignBottom="@+id/BahrainLabel"
+                android:layout_alignStart="@+id/SwissValue"
+                android:background="@drawable/edit_text" />
+
+
+            <TextView
+                android:id="@+id/RussianLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/BahrainLabel"
+                android:layout_below="@+id/BahrainValue"
+                android:layout_marginTop="12dp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/stringRussianRuble"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/RussianValue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/RussianLabel"
+                android:layout_alignStart="@+id/BahrainValue"
+                android:background="@drawable/edit_text" />
+
+
+
+            <TextView
+                android:id="@+id/HungarianLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/RussianLabel"
+                android:layout_below="@+id/RussianLabel"
+                android:layout_marginTop="15dp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/stringHungarianForint"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/HungarianValue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/HungarianLabel"
+                android:layout_alignStart="@+id/RussianValue"
+                android:background="@drawable/edit_text" />
+
+            <TextView
+                android:id="@+id/MalaysianLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/HungarianLabel"
+                android:layout_below="@+id/HungarianLabel"
+                android:layout_marginTop="13dp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/stringMalaysianRinggit"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/MalaysianValue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/MalaysianLabel"
+                android:layout_alignStart="@+id/HungarianValue"
+                android:background="@drawable/edit_text" />
+
+            <TextView
+                android:id="@+id/JapaneseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/RussianLabel"
+                android:layout_below="@+id/MalaysianLabel"
+                android:layout_marginTop="13dp"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/stringJapaneseYen"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/JapaneseValue"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/JapaneseLabel"
+                android:layout_alignStart="@+id/MalaysianValue"
+                android:background="@drawable/edit_text" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
